@@ -1,0 +1,26 @@
+.welcome-head {
+  width: 100vw;
+  text-align: center;
+  margin: 50px 0;
+  font-weight: normal;
+  font-family: "Helvetica Neue";
+}
+.welcome-content-container {
+  display: flex;
+  height: 50vh;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.welcome-content-text {
+  height: 300px;
+  flex-basis: 45%;
+  font-size: 18px;
+  line-height: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+}
+.welcome-content-image {
+  height: 300px;
+  flex-basis: 45%;
+  max-width: 450px;
+}

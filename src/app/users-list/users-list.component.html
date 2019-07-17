@@ -1,0 +1,20 @@
+<div class="search-bar">
+    <p class="search-bar-header">Search Users</p>
+    <input class="search-bar-input" placeholder="username" [(ngModel)]="findUser" type="text">
+</div>
+<div class="container">
+    <div class="text-center">
+        <div *ngFor="let item of pageOfItems | filter: findUser">
+            <section class="user-container">
+                <div class="user-info">
+                    <img alt="user-avatar" class="user-avatar" src="{{item.avatar_url}}">
+                    <div class="user-login">@{{item.login}}</div>
+                </div>
+                <div class="user-links">
+                    <a class="user-link" routerLink="/user/{{item.login}}">View Details</a>
+                    <a class="user-link" href="https://github.com/{{item.login}}">Open on Github</a></div>
+            </section>
+        </div>
+        <jw-pagination [items]="items" (changePage)="onChangePage($event)" class="pagination"></jw-pagination>
+    </div>
+</div>
