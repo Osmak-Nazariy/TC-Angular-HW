@@ -100,8 +100,8 @@ module.exports = "<h1 class=\"welcome-head\">Magic Github Explorer</h1>\n<div cl
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppRoutingModule", function() { return AppRoutingModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
 /* harmony import */ var _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./welcome/welcome.component */ "./src/app/welcome/welcome.component.ts");
 /* harmony import */ var _users_list_users_list_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./users-list/users-list.component */ "./src/app/users-list/users-list.component.ts");
@@ -111,23 +111,20 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var routes = [
+const routes = [
     { path: 'welcome', component: _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_4__["WelcomeComponent"] },
     { path: 'users-list', component: _users_list_users_list_component__WEBPACK_IMPORTED_MODULE_5__["UsersListComponent"] },
     { path: 'user/:id', component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__["UserProfileComponent"] },
     { path: '**', component: _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_4__["WelcomeComponent"], pathMatch: 'full' },
 ];
-var AppRoutingModule = /** @class */ (function () {
-    function AppRoutingModule() {
-    }
-    AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
-            exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
-        })
-    ], AppRoutingModule);
-    return AppRoutingModule;
-}());
+let AppRoutingModule = class AppRoutingModule {
+};
+AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+        imports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forRoot(routes)],
+        exports: [_angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"]]
+    })
+], AppRoutingModule);
 
 
 
@@ -155,22 +152,21 @@ module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var AppComponent = /** @class */ (function () {
-    function AppComponent() {
+let AppComponent = class AppComponent {
+    constructor() {
         this.title = 'github-users';
     }
-    AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-root',
-            template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
-            styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
-        })
-    ], AppComponent);
-    return AppComponent;
-}());
+};
+AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-root',
+        template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
+        styles: [__webpack_require__(/*! ./app.component.css */ "./src/app/app.component.css")]
+    })
+], AppComponent);
 
 
 
@@ -187,13 +183,13 @@ var AppComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
 /* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! jw-angular-pagination */ "./node_modules/jw-angular-pagination/lib/jw-pagination.component.js");
 /* harmony import */ var jw_angular_pagination__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(jw_angular_pagination__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var ng2_search_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng2-search-filter */ "./node_modules/ng2-search-filter/ng2-search-filter.es5.js");
+/* harmony import */ var ng2_search_filter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ng2-search-filter */ "./node_modules/ng2-search-filter/ng2-search-filter.js");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
@@ -215,33 +211,30 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var AppModule = /** @class */ (function () {
-    function AppModule() {
-    }
-    AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
-            declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
-                _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_9__["UserProfileComponent"],
-                _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
-                _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
-                _users_list_users_list_component__WEBPACK_IMPORTED_MODULE_12__["UsersListComponent"],
-                _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_13__["WelcomeComponent"],
-                jw_angular_pagination__WEBPACK_IMPORTED_MODULE_5__["JwPaginationComponent"],
-            ],
-            imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
-                _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
-                _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
-                ng2_search_filter__WEBPACK_IMPORTED_MODULE_6__["Ng2SearchPipeModule"],
-                _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
-            ],
-            providers: [],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
-        })
-    ], AppModule);
-    return AppModule;
-}());
+let AppModule = class AppModule {
+};
+AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
+        declarations: [
+            _app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"],
+            _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_9__["UserProfileComponent"],
+            _header_header_component__WEBPACK_IMPORTED_MODULE_10__["HeaderComponent"],
+            _footer_footer_component__WEBPACK_IMPORTED_MODULE_11__["FooterComponent"],
+            _users_list_users_list_component__WEBPACK_IMPORTED_MODULE_12__["UsersListComponent"],
+            _welcome_welcome_component__WEBPACK_IMPORTED_MODULE_13__["WelcomeComponent"],
+            jw_angular_pagination__WEBPACK_IMPORTED_MODULE_5__["JwPaginationComponent"],
+        ],
+        imports: [
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
+            ng2_search_filter__WEBPACK_IMPORTED_MODULE_6__["Ng2SearchPipeModule"],
+            _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
+        ],
+        providers: [],
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_8__["AppComponent"]]
+    })
+], AppModule);
 
 
 
@@ -269,24 +262,23 @@ module.exports = ".footer-container {\r\n    width: 100%;\r\n    padding: 20px;\
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var FooterComponent = /** @class */ (function () {
-    function FooterComponent() {
+let FooterComponent = class FooterComponent {
+    constructor() {
         this.name = "Osmak Nazariy";
     }
-    FooterComponent.prototype.ngOnInit = function () {
-    };
-    FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-footer',
-            template: __webpack_require__(/*! raw-loader!./footer.component.html */ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html"),
-            styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
-        })
-    ], FooterComponent);
-    return FooterComponent;
-}());
+    ngOnInit() {
+    }
+};
+FooterComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-footer',
+        template: __webpack_require__(/*! raw-loader!./footer.component.html */ "./node_modules/raw-loader/index.js!./src/app/footer/footer.component.html"),
+        styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
+    })
+], FooterComponent);
 
 
 
@@ -314,23 +306,21 @@ module.exports = ".header-container {\r\n    width: 100%;\r\n    height: 60px;\r
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HeaderComponent", function() { return HeaderComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent() {
+let HeaderComponent = class HeaderComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    HeaderComponent.prototype.ngOnInit = function () {
-    };
-    HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-header',
-            template: __webpack_require__(/*! raw-loader!./header.component.html */ "./node_modules/raw-loader/index.js!./src/app/header/header.component.html"),
-            styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
-        })
-    ], HeaderComponent);
-    return HeaderComponent;
-}());
+};
+HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-header',
+        template: __webpack_require__(/*! raw-loader!./header.component.html */ "./node_modules/raw-loader/index.js!./src/app/header/header.component.html"),
+        styles: [__webpack_require__(/*! ./header.component.css */ "./src/app/header/header.component.css")]
+    })
+], HeaderComponent);
 
 
 
@@ -358,19 +348,19 @@ module.exports = ".user-profile {\r\n  width: 90vw;\r\n  height: auto;\r\n  bord
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserProfileComponent", function() { return UserProfileComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
 /* harmony import */ var _users_list_search_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../users-list/search.service */ "./src/app/users-list/search.service.ts");
 
 
 
 
-var UserProfileComponent = /** @class */ (function () {
-    function UserProfileComponent(httpService, route) {
+let UserProfileComponent = class UserProfileComponent {
+    constructor(httpService, route) {
         this.httpService = httpService;
         this.route = route;
         this.User = {
-            avatar: "Avatar",
+            avatar_url: "Avatar",
             name: "Name",
             login: "Login",
             created_at: "",
@@ -379,29 +369,27 @@ var UserProfileComponent = /** @class */ (function () {
             email: "Email"
         };
     }
-    UserProfileComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        var userName = this.route.snapshot.paramMap.get('id');
-        this.getUsersSub$ = this.httpService.getUser(userName).subscribe(function (user) { return _this.User = user; }, function (error) { _this.error = error.message; console.log(error); });
-        this.getReposSub$ = this.httpService.getRepos(userName).subscribe(function (repos) { return _this.userRepos = repos.slice(0, 5); }, function (error) { _this.error = error.message; console.log(error); });
-    };
-    UserProfileComponent.prototype.ngOnDestroy = function () {
+    ngOnInit() {
+        const userName = this.route.snapshot.paramMap.get('id');
+        this.getUsersSub$ = this.httpService.getUser(userName).subscribe(user => this.User = user, error => { this.error = error.message; console.log(error); });
+        this.getReposSub$ = this.httpService.getRepos(userName).subscribe(repos => this.userRepos = repos.slice(0, 5), error => { this.error = error.message; console.log(error); });
+    }
+    ngOnDestroy() {
         this.getUsersSub$.unsubscribe();
         this.getReposSub$.unsubscribe();
-    };
-    UserProfileComponent.ctorParameters = function () { return [
-        { type: _users_list_search_service__WEBPACK_IMPORTED_MODULE_3__["SearchService"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
-    ]; };
-    UserProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-user-profile',
-            template: __webpack_require__(/*! raw-loader!./user-profile.component.html */ "./node_modules/raw-loader/index.js!./src/app/user-profile/user-profile.component.html"),
-            styles: [__webpack_require__(/*! ./user-profile.component.css */ "./src/app/user-profile/user-profile.component.css")]
-        })
-    ], UserProfileComponent);
-    return UserProfileComponent;
-}());
+    }
+};
+UserProfileComponent.ctorParameters = () => [
+    { type: _users_list_search_service__WEBPACK_IMPORTED_MODULE_3__["SearchService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] }
+];
+UserProfileComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-user-profile',
+        template: __webpack_require__(/*! raw-loader!./user-profile.component.html */ "./node_modules/raw-loader/index.js!./src/app/user-profile/user-profile.component.html"),
+        styles: [__webpack_require__(/*! ./user-profile.component.css */ "./src/app/user-profile/user-profile.component.css")]
+    })
+], UserProfileComponent);
 
 
 
@@ -418,48 +406,47 @@ var UserProfileComponent = /** @class */ (function () {
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SearchService", function() { return SearchService; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
-/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm2015/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm2015/operators/index.js");
 
 
 
 
 
-var SearchService = /** @class */ (function () {
-    function SearchService(http) {
+let SearchService = class SearchService {
+    constructor(http) {
         this.http = http;
         this.baseUrl = 'https://api.github.com/users';
     }
-    SearchService.prototype.getData = function () {
-        return this.http.get(this.baseUrl).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (err) {
+    getData() {
+        return this.http.get(this.baseUrl).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(err => {
             console.log(err);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])(err);
         }));
-    };
-    SearchService.prototype.getUser = function (userName) {
-        return this.http.get(this.baseUrl + ("/" + userName)).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (err) {
+    }
+    getUser(userName) {
+        return this.http.get(this.baseUrl + `/${userName}`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(err => {
             console.log(err);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])(err);
         }));
-    };
-    SearchService.prototype.getRepos = function (userName) {
-        return this.http.get(this.baseUrl + ("/" + userName + "/repos")).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (err) {
+    }
+    getRepos(userName) {
+        return this.http.get(this.baseUrl + `/${userName}/repos`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(err => {
             console.log(err);
             return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["throwError"])(err);
         }));
-    };
-    SearchService.ctorParameters = function () { return [
-        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
-    ]; };
-    SearchService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-            providedIn: 'root'
-        })
-    ], SearchService);
-    return SearchService;
-}());
+    }
+};
+SearchService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+SearchService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+        providedIn: 'root'
+    })
+], SearchService);
 
 
 
@@ -487,39 +474,37 @@ module.exports = "/* @import '/node_modules/bootstrap/dist/css/bootstrap.min.css
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UsersListComponent", function() { return UsersListComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _search_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./search.service */ "./src/app/users-list/search.service.ts");
 
 
 
-var UsersListComponent = /** @class */ (function () {
-    function UsersListComponent(httpService) {
+let UsersListComponent = class UsersListComponent {
+    constructor(httpService) {
         this.httpService = httpService;
         this.items = [];
     }
-    UsersListComponent.prototype.ngOnInit = function () {
-        var _this = this;
-        this.httpService.getData().subscribe(function (data) { return _this.items = data; });
-        this.items = Array(150).fill(0).map(function (x, i) { return ({ id: (i + 1), name: "Item " + (i + 1) }); });
-    };
-    UsersListComponent.prototype.ngOnDestroy = function () {
+    ngOnInit() {
+        this.httpService.getData().subscribe(data => this.items = data);
+        this.items = Array(150).fill(0).map((x, i) => ({ id: (i + 1), name: `Item ${i + 1}` }));
+    }
+    ngOnDestroy() {
         // this.subscription.unsubscribe();
-    };
-    UsersListComponent.prototype.onChangePage = function (pageOfItems) {
+    }
+    onChangePage(pageOfItems) {
         this.pageOfItems = pageOfItems;
-    };
-    UsersListComponent.ctorParameters = function () { return [
-        { type: _search_service__WEBPACK_IMPORTED_MODULE_2__["SearchService"] }
-    ]; };
-    UsersListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-users-list',
-            template: __webpack_require__(/*! raw-loader!./users-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/users-list/users-list.component.html"),
-            styles: [__webpack_require__(/*! ./users-list.component.css */ "./src/app/users-list/users-list.component.css")]
-        })
-    ], UsersListComponent);
-    return UsersListComponent;
-}());
+    }
+};
+UsersListComponent.ctorParameters = () => [
+    { type: _search_service__WEBPACK_IMPORTED_MODULE_2__["SearchService"] }
+];
+UsersListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-users-list',
+        template: __webpack_require__(/*! raw-loader!./users-list.component.html */ "./node_modules/raw-loader/index.js!./src/app/users-list/users-list.component.html"),
+        styles: [__webpack_require__(/*! ./users-list.component.css */ "./src/app/users-list/users-list.component.css")]
+    })
+], UsersListComponent);
 
 
 
@@ -547,23 +532,21 @@ module.exports = ".welcome-head {\r\n  width: 100vw;\r\n  text-align: center;\r\
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WelcomeComponent", function() { return WelcomeComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 
 
-var WelcomeComponent = /** @class */ (function () {
-    function WelcomeComponent() {
+let WelcomeComponent = class WelcomeComponent {
+    constructor() { }
+    ngOnInit() {
     }
-    WelcomeComponent.prototype.ngOnInit = function () {
-    };
-    WelcomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-            selector: 'app-welcome',
-            template: __webpack_require__(/*! raw-loader!./welcome.component.html */ "./node_modules/raw-loader/index.js!./src/app/welcome/welcome.component.html"),
-            styles: [__webpack_require__(/*! ./welcome.component.css */ "./src/app/welcome/welcome.component.css")]
-        })
-    ], WelcomeComponent);
-    return WelcomeComponent;
-}());
+};
+WelcomeComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-welcome',
+        template: __webpack_require__(/*! raw-loader!./welcome.component.html */ "./node_modules/raw-loader/index.js!./src/app/welcome/welcome.component.html"),
+        styles: [__webpack_require__(/*! ./welcome.component.css */ "./src/app/welcome/welcome.component.css")]
+    })
+], WelcomeComponent);
 
 
 
@@ -582,7 +565,7 @@ __webpack_require__.r(__webpack_exports__);
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-var environment = {
+const environment = {
     production: false
 };
 /*
@@ -606,8 +589,8 @@ var environment = {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm5/platform-browser-dynamic.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser-dynamic */ "./node_modules/@angular/platform-browser-dynamic/fesm2015/platform-browser-dynamic.js");
 /* harmony import */ var _app_app_module__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app/app.module */ "./src/app/app.module.ts");
 /* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./environments/environment */ "./src/environments/environment.ts");
 
@@ -618,7 +601,7 @@ if (_environments_environment__WEBPACK_IMPORTED_MODULE_3__["environment"].produc
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["enableProdMode"])();
 }
 Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformBrowserDynamic"])().bootstrapModule(_app_app_module__WEBPACK_IMPORTED_MODULE_2__["AppModule"])
-    .catch(function (err) { return console.error(err); });
+    .catch(err => console.error(err));
 
 
 /***/ }),
@@ -636,4 +619,4 @@ module.exports = __webpack_require__(/*! C:\TechMagick\Нова папка\githu
 /***/ })
 
 },[[0,"runtime","vendor"]]]);
-//# sourceMappingURL=main-es5.js.map
+//# sourceMappingURL=main-es2015.js.map
